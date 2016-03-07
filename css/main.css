@@ -95,30 +95,53 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-nav > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#lake-girl-quiche-hero {
+    background-image: url("../img/love-the-lake.jpg");
+    background-size: cover;
+    text-transform: uppercase;
 }
 
-nav > ul > li {
-    display: inline;
-    padding: 10px;
+.button.is-primary {
+    background-color: #184E48;
+    border-radius: 2px;
 }
 
+.button.is-primary:hover {
+    background-color: #439D93;
+}
 
+#lake-girl-quiche-hero nav {
+    padding-top: 1ex;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+#lake-girl-quiche-hero nav .title{
+    padding-top: 1ex;
+    color: white;
+}
+#lake-girl-quiche-hero nav a {
+    margin-left: .5em;
+    margin-right: .5em;
+    color: white;
+}
 
+#lake-girl-quiche-hero h2 {
+    color: white;
+}
 
-
-
-
-
-
-
-
-
+.fancy {
+    font-family: cursive;
+}
+/*#menu::before {
+    background: url("../img/wave-repeating.png") repeat-x;
+    background-size: contain;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0ex;
+    left: 0;
+    content: "";
+}*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */

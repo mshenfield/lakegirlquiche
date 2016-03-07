@@ -9,7 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.15/css/bulma.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -18,23 +18,127 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-    <nav>
-        <ul>
-            <li><a href="launch.html">About</a></li>
-            <li><a href="menu.html">Quiche Menu</a></li>
-            <li><a href="catering.html">Special Soiree</a></li>
-        </ul>
-    </nav>
-    <article class="main">
-        <section>
-           At <span class="text-logo">Lake Girl Quiche</span> we make everything fresh-from-scratch, using the finest
-           ingredients and locally grown whenever the season allows.
-           <span class="fancy">
-               Bon Apetit
-           </span>
+        <section id="lake-girl-quiche-hero" class="hero is-fullheight">
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <span class="title fancy-text">Lake Girl Quiche</span>
+                </div>
+                <div class="navbar-right">
+                    <span class="navbar-item"><a  href="#home">Home</a></span>
+                    <a class="navbar-item" href="#launch">Mission &amp Launch</a>
+                    <a class="navbar-item" href="#menu">Menu</a>
+                    <a class="navbar-item" href="#order">Order</a>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <div class="container">
+                    <h2 class="title">Fresh-from-scratch using the finest locally grown ingredients</h2>
+                    <a class="button is-primary is-medium" href="#order">Ooh la la! →</a>
+                </div>
+            </div>
         </section>
-    </article>
+        <section class="section">
+            <div class="container">
+                <h1 id="menu" class="title">Come Aboard</h1>
+                <table class="table">
+                    <tr>
+                        <td>Captain Eric</td>
+                        <td>Crabmeat, green onions, red and yellow peppers blended with Swiss, Gruyere, and Neufchatel cheese</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Max's Lagoon</td>
+                        <td>
+                            One of our most popular, hash brown potatoes, Itialian sausage, red pepper, red onion, with a mix of
+                            Smoked Mozzarella and Pepper Jack cheese.
+                        </td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Susie South Shore</td>
+                        <td>Arugula, mushrooms, shallots tossed with a mix of fresh herbs, with Goat and Neufchatel cheese</td>
+                        <td>$12</td>
+                    </tr>
+                    <tr>
+                        <td>Morgan's String Bikini</td>
+                        <td>Chorizo, corn, cherry tomatoes with a blend of Mexican cheeses. Ariba!</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Buttons Bay</td>
+                        <td>Smoked bacon, zucchini combined with Guyere, Swiss, and Neufchatel cheese. Yum.</td>
+                        <td>$12</td>
+                    </tr>
+                    <tr>
+                        <td>Narrows</td>
+                        <td>A zesty blend of spinach, blended cheeses, mushrooms and onions.</td>
+                        <td>$12</td>
+                    </tr>
+                </table>
+                <a class="button is-primary is-medium" href="#order">Bon Appétit →</a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+            <h1 class="title" id="launch">The Launch of Lake Girl Quiche</h1>
+            <div class="content">
+                <p>
+                    I started making quiches as a thank you to my friends and family for the kindness and love I have
+                    received from them. The business evolved as a direct result of their encouragement.
+                </p>
+                <p>
+                    The creative work
+                    behind Lake Girl Quiche was a collaboration by some of my favorite kids I used to whip on a tube on
+                    the back of my boat. In particular - <a class="soft-link" href="https://github.com/mshenfield">Max
+                    </a> and <a class="soft-link" href="https://www.behance.net/Msemmelhack">Morgan</a>! As well as my
+                    dear friend Eric without whose support Lake Girl Quiche wouldn't have taken off.
+                </p>
+                <p>
+                    Now I get to share it with you and spread that love and joy. Sit back, relax and make more great
+                    memories for those you care for.
+                </p>
+                <span class="subtitle">C'est la vie</span>
+            </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+            <h1 class="title" id="order">Order Online</h1>
+            <h2 class="subtitle">Ooh La La!</h2>
+            <form id="order-form" action="#">
+                <p class="control">
+                    <label class="label" for="quiche-type">Your Choice Of Quiche</label>
+                    <span class="select">
+                        <select name="quiche-type">
+                            <option value="">Choose One</option>
+                            <option value="eric">Captain Eric</option>
+                            <option value="max">Max's Lagoon</option>
+                            <option value="susie">Susie South Shore</option>
+                            <option value="morgan">Morgan's String Bikini</option>
+                            <option value="buttons">Buttons Bay</option>
+                            <option value="narrows">Narrows</option>
+                        </select>
+                    </span>
+                </p>
+                <p class="control">
+                    <label class="label" for="quantity">How Many?</label>
+                    <input class="input" name="quantity" type="number" min="1" placeholder="0"/>
+                </p>
+                <p class="control">
+                    <label class="label" for="email">Your Email</label>
+                    <input class="input" type="email" name="email" placeholder="you@example.com"/>
+                </p>
+                <p class="control">
+                    <label class="label" for="notes">Anything You Want to Add?</label>
+                    <textarea class="textarea" name="notes" placeholder="Yum!"></textarea>
+                </p>
+                <br/>
+                <div class="notification is-warning">
+                    We're not taking order's quite yet. Check back in the summer!
+                </div>
+            </form>
+            </div>
+        </section>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
